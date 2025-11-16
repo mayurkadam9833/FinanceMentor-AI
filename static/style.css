@@ -11,7 +11,7 @@ body, html {
 }
 
 .card {
-  height: 90vh; /* increased height */
+  height: 90vh;
   border-radius: 15px !important;
   background-color: rgba(0, 0, 0, 0.6) !important;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
@@ -19,7 +19,7 @@ body, html {
 
 .msg_card_body {
   overflow-y: auto;
-  height: calc(90vh - 130px); /* dynamically fits inside card */
+  height: calc(90vh - 130px);
   padding: 10px;
 }
 
@@ -38,7 +38,6 @@ body, html {
   border: 0 !important;
   color: white !important;
   height: 60px !important;
-  overflow-y: auto;
 }
 
 .type_msg:focus {
@@ -58,6 +57,7 @@ body, html {
   height: 70px;
   width: 70px;
   border: 1.5px solid #f5f6fa;
+  cursor: pointer;
 }
 
 .user_img_msg {
@@ -89,8 +89,6 @@ body, html {
 }
 
 .user_info {
-  margin-top: auto;
-  margin-bottom: auto;
   margin-left: 15px;
 }
 
@@ -106,8 +104,6 @@ body, html {
 }
 
 .msg_cotainer {
-  margin-top: auto;
-  margin-bottom: auto;
   margin-left: 10px;
   border-radius: 25px;
   background-color: #2e8de1;
@@ -119,8 +115,6 @@ body, html {
 }
 
 .msg_cotainer_send {
-  margin-top: auto;
-  margin-bottom: auto;
   margin-right: 10px;
   border-radius: 25px;
   background-color: #3742fa;
@@ -145,4 +139,30 @@ body, html {
   bottom: -15px;
   color: rgba(255, 255, 255, 0.5);
   font-size: 10px;
+}
+
+/* DP ZOOM CSS */
+.dp-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+}
+
+.dp-modal img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+  animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.5); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
