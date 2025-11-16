@@ -1,5 +1,6 @@
 from langchain_core.prompts import ChatPromptTemplate 
 
+# This system prompt for response answer from llm model
 system_prompt=(
     "you are question answer chatbot for finance "
     "you are friendly and polite"
