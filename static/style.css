@@ -1,0 +1,148 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(135deg, #0a1931, #185adb, #2e8de1, #0a1931);
+  font-family: 'Poppins', sans-serif;
+}
+
+.chat {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  height: 90vh; /* increased height */
+  border-radius: 15px !important;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.msg_card_body {
+  overflow-y: auto;
+  height: calc(90vh - 130px); /* dynamically fits inside card */
+  padding: 10px;
+}
+
+.card-header {
+  border-radius: 15px 15px 0 0 !important;
+  border-bottom: 0 !important;
+}
+
+.card-footer {
+  border-radius: 0 0 15px 15px !important;
+  border-top: 0 !important;
+}
+
+.type_msg {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: 0 !important;
+  color: white !important;
+  height: 60px !important;
+  overflow-y: auto;
+}
+
+.type_msg:focus {
+  box-shadow: none !important;
+  outline: 0px !important;
+}
+
+.send_btn {
+  border-radius: 0 15px 15px 0 !important;
+  background-color: #185adb !important;
+  border: 0 !important;
+  color: white !important;
+  cursor: pointer;
+}
+
+.user_img {
+  height: 70px;
+  width: 70px;
+  border: 1.5px solid #f5f6fa;
+}
+
+.user_img_msg {
+  height: 40px;
+  width: 40px;
+  border: 1.5px solid #f5f6fa;
+}
+
+.img_cont {
+  position: relative;
+  height: 70px;
+  width: 70px;
+}
+
+.img_cont_msg {
+  height: 40px;
+  width: 40px;
+}
+
+.online_icon {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background-color: #00e676;
+  border-radius: 50%;
+  bottom: 0.2em;
+  right: 0.4em;
+  border: 1.5px solid white;
+}
+
+.user_info {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 15px;
+}
+
+.user_info span {
+  font-size: 22px;
+  color: white;
+  font-weight: 600;
+}
+
+.user_info p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.msg_cotainer {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+  border-radius: 25px;
+  background-color: #2e8de1;
+  padding: 10px;
+  position: relative;
+  color: white;
+  max-width: 75%;
+  word-wrap: break-word;
+}
+
+.msg_cotainer_send {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 10px;
+  border-radius: 25px;
+  background-color: #3742fa;
+  padding: 10px;
+  position: relative;
+  color: white;
+  max-width: 75%;
+  word-wrap: break-word;
+}
+
+.msg_time {
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 10px;
+}
+
+.msg_time_send {
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 10px;
+}
