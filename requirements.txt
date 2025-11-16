@@ -1,0 +1,14 @@
+sentence-transformers==2.2.2 
+langchain===0.2.10
+flask==2.3.3
+pypdf==3.17.1 
+unstructured
+python-dotenv==1.0.0
+chromadb
+langchain-pinecone==0.1.1
+langchain-community===0.2.10
+langchain-experimental==0.0.11
+huggingface-hub==0.22.2
+tiktoken==0.7.0
+
+-e .
